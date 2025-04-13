@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>북마클릿 실행기</title>
+</head>
+<body>
+  <h2>🔒 Bookmarklet Loader</h2>
+  <button onclick="run()">🚀 실행</button>
+  <script>
+    function run() {
+      fetch('https://bbosong99.github.io/bookmarklet-runner/code.js')
+        .then(r => r.text())
+        .then(js => eval(js));
+    }
+  </script>
+</body>
+</html>
